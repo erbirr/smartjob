@@ -1,10 +1,9 @@
 # smartjob
 Repositorio con prueba para consultora SmartJob.
 
-
 # Proyecto Spring Boot - Gestión de Usuarios
 
-Este proyecto es una aplicación de ejemplo construida con Spring Boot que gestiona usuarios. Incluye características como registro de usuarios, validación de datos y generación de tokens JWT, ademas de la utilización de Swagger para la documentación y los respectivos Test Unitarios para cada clase.
+Este proyecto es una aplicación de ejemplo construida con Spring Boot que gestiona usuarios. Incluye características como registro de usuarios, validación de datos y generación de tokens JWT, ademas Swagger y los respectivos test unitarios para cada clase construida.
 
 ## Requisitos previos
 
@@ -20,62 +19,50 @@ Antes de comenzar, asegúrate de tener los siguientes requisitos instalados en t
 
    ```bash
    git clone https://github.com/erbirr/smartjob.git
-   cd /smartjob/prueba
-
+   cd smartjob/prueba
 
 2. **Compila el proyecto:**:
 
 Navega al directorio del proyecto y ejecuta Maven para compilar:
 
-	mvn clean install
+   mvn clean install
 
+Tambien lo puedes hacer con el wrapper de Maven:
 
-Tambien lo puedes hacer con el Wrapper de Maven:
+   ./mvnw spring-boot:run
 
-	./mvnw clean install
+3. **Ejecuta la aplicación:**:
 
+   mvn spring-boot:run
 
-3. **Ejecuta la aplicación**:
+O con el wrapper de Maven:
 
-Ejecuta el siguiente comando para iniciar la aplicación.
+   ./mvnw spring-boot:run
 
-	mvn spring-boot:run
+4. **Base de Datos H2:**:
 
-
-Tambien lo puedes hacer con el Wrapper
-
-	./mvnw spring-boot:run
-
-
-
-4. **Base de Datos**:
-
-La Base de Datos utilizada es una base de datos en memoria (H2), una vez iniciada la aplicación la puedes revisar la consola en el siguiente link.
+   El proyecto incluye una base de datos en memoria H2 para facilitar el desarrollo y las pruebas. No es necesaria ninguna configuración adicional. Puedes acceder a la consola H2 de la siguiente forma:
 
 	http://localhost:8080/h2-console
-
+	
 	JDBC URL: jdbc:h2:mem:testdb
 	User: test
 	Password: prueba
 
-
-5. **Swagger**:
+5. **Swagger:**:
 
 Además, Swagger está habilitado para facilitar la documentación de la API. Puedes acceder a la interfaz de Swagger en:
 
-	http://localhost:8080/swagger-ui.html
+   http://localhost:8080/swagger-ui/index.html
 
 
+6. **Ejecución de Test Unitarios:**:
 
-6. **Pruebas Unitarias**:
+Para ejecutar los tests unitarios, utiliza el siguiente comando:
 
-Para ejecutar las pruebas unitarias del proyecto puedes ejecutar el siguiente comando maven.
+   mvn test
 
-	mvn test
-
-
-7. **Estructura del proyecto**:
-
+7. **Estructura del Proyecto:**:
 
 prueba/
 │
@@ -126,5 +113,4 @@ prueba/
 │       └── resources/                 # Recursos utilizados en los test (si los hay)
 │
 └── target/                            # Directorio generado durante la compilación, no se incluye en Git
-
 
