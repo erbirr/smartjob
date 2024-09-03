@@ -64,7 +64,7 @@ Para ejecutar los tests unitarios, utiliza el siguiente comando:
 
 7. **Estructura del Proyecto:**:
 
-prueba/
+smartjob/
 │
 ├── .gitignore
 ├── pom.xml
